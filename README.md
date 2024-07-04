@@ -1,3 +1,3 @@
 # Regresiones
 
-Modelo de regresiones lineal y logistica
+Modelo de regresiones lineal y logística
