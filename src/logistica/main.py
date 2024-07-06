@@ -31,6 +31,7 @@ y_test = torch.from_numpy(y_test.astype(np.float32))
 y_train = y_train.view(y_train.shape[0], 1)
 y_test = y_test.view(y_test.shape[0], 1)
 
+
 # modelo
 
 class LogisticRegression(nn.Module):
@@ -69,7 +70,7 @@ for epoca in range(num_epocas):
     optimizer.zero_grad()
 
     if (epoca + 1) % 10 == 0:
-        print(f'epoca: {epoca+1}, loss = {loss.item():.4f}')
+        print(f'epoca: {epoca + 1}, loss = {loss.item():.4f}')
 
 with torch.no_grad():
     y_predicted = model(X_test)
